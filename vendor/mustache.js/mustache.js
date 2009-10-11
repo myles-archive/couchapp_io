@@ -34,7 +34,7 @@ var Mustache = {
   },
 
   render_partial: function(name) {
-    var evil_name = eval(name)
+    var evil_name = eval(name);
     switch(typeof evil_name) {
       case "string":
         return this.to_html(evil_name, "");
