@@ -4,6 +4,9 @@ function(doc, req) {
   }
   var doc = {};
   doc.target = req.query.target;
+  doc.q = req.query;
+  doc.form = req.form;
+  doc.created_at = Date.now();
 
   var shortio = function() {
     function generateSecret(length) {
