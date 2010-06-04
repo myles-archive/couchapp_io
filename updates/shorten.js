@@ -23,5 +23,5 @@ function(doc, req) {
   var shortened = shortio();
   doc._id = shortened;
   doc.date = (new Date()).rfc3339();
-  return [doc, "http://jan.io/" + shortened + "\n"];
+  return [doc, "http://myl.be/" + shortened + "\n"];
 }

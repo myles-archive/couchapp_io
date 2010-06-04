@@ -2,7 +2,7 @@ function(doc, req) {
   if(!doc && !req.id) {
     return {
       code: 200,
-      body: "Hey there, this is <a href=\"http://twitter.com/janl\">@janl's</a> personal URL shortener. Make your own with <a href=\"http://github.com/janl/io\">io</a>."
+      body: "Hey there, this is @<a href=\"http://twitter.com/mylesb\" title=\"Myles Braithwaite's\">mylesb</a>'s personal URL shortener. Make your own with <a href=\"http://github.com/janl/io\">io</a>."
     }
   }
 
@@ -19,8 +19,8 @@ function(doc, req) {
     // redirect to real short
     return {
       code: 302,
-      headers: {"Location": "http://jan.io/" + sane_source},
-      body: "If you don't get redirected, please go to http://jan.io/" + sane_source + "\n"
+      headers: {"Location": "http://myl.be/" + sane_source},
+      body: "If you don't get redirected, please go to http://myl.be/" + sane_source + "\n"
     };
   }
 
