@@ -15,45 +15,15 @@
 					});
 				}
 			});
-			db.view("couchstats/stats", {
-				success: function(result) {
-					var total = result.rows[0].value || 0;
-					$("#total span").append(total);
-				}
-			});
 		});
 	</script>
 	<style type="text/css" media="screen">
-		body {
-			font-family:"Minion Pro";
-		}
-		
-		h1 {
-			width:90%;
-			margin:1ex auto 0 auto;
-		}
-		
-		ul {
-			margin:4ex auto 0 auto;
-		}
-		
-		li {
-			list-style: none;
-		}
-		
-		.span {
-			display:inline-block;
-			width:3em;
-			text-align:center;
-			font-style:italic;
-		}
-		
-		span {
-			display:inline-block;
-			width:2em;
-			text-align:right;
-			font-style:italic;
-		}
+		body { font-family:"Minion Pro"; }
+		h1 { width:90%; margin:1ex auto 0 auto; }
+		ul { margin:4ex auto 0 auto; }
+		li { list-style: none; }
+		a.span { display:inline-block; width:3em; text-align:center; font-style:italic; }
+		span { display:inline-block; width:2em; text-align:right; font-style:italic; }
 	</style>
 </body>
 </html>
