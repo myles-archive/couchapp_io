@@ -1,14 +1,25 @@
 [
     {
-        "from":"/new",
-        "to":"_update/shorten"
+        "from": "/list",
+        "to": "_list/index/shorts-by-date",
+        "query" : {
+            "descending" : true
+        }
     },
     {
-        "from":"/:id",
-        "to":"_show/long/:id"
+        "from": "/new",
+        "to": "_update/shorten"
     },
     {
-        "from":"",
-        "to":"_show/long/"
+        "from": "/info/:id",
+        "to": "_show/info/:id"
+    },
+    {
+        "from": "/:id",
+        "to": "_show/long/:id"
+    },
+    {
+        "from": "",
+        "to": "_show/long/"
     }
 ]
