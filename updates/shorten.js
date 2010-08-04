@@ -23,5 +23,6 @@ function(doc, req) {
     var shortened = shortio();
     doc._id = shortened;
     doc.date = (new Date()).rfc3339();
-    return [doc, "http://myl.be/" + shortened + "\n"];
+    doc.short = "http://" + req.headers.Host + "/" + shortened;
+    return [doc, doc.short + "\n"];
 }

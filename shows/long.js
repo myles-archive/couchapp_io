@@ -2,7 +2,7 @@ function(doc, req) {
     if(!doc && !req.id) {
         return {
             code: 200,
-            body: "Hey there, this is @<a href=\"http://twitter.com/mylesb\" title=\"Myles Braithwaite's\">mylesb</a>'s personal URL shortener. Make your own with <a href=\"http://github.com/janl/io\">io</a>."
+            body: "<p>Hey there, this is @<a href=\"http://twitter.com/mylesb\" title=\"Myles Braithwaite's\">mylesb</a>'s personal URL shortener. Make your own with <a href=\"http://github.com/janl/io\">io</a>.</p>"
         }
     }
     

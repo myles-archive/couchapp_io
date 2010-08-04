@@ -6,6 +6,7 @@ function(doc) {
     emit(doc._id, {
         date: doc.date,
         target: doc.target,
-        key: doc._id
+        key: doc._id,
+        short_url: 'http://myl.be/' + doc._id,
     });
 }
