@@ -28,8 +28,9 @@ while True:
     for url in data['data']:
         key = url['short_url'].split('/')[-1]
         target = url['url']
+        short = url['short_url']
         date = datetime.datetime.utcfromtimestamp(url['created']).isoformat()
-        urls += [{'_id': key, 'target': target, 'date': date}]
+        urls += [{'_id': key, 'target': target, 'date': date, 'short': short}]
     
     page += 1
 
